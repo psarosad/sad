@@ -3,10 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <title>SAD</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 60px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 64px;
+      margin: 0;
+    }
+
+    nav {
+      margin: 20px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #3498db;
+      font-weight: bold;
+    }
+
+    section.gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section.gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background: #eee;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    footer a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #555;
+    }
+
+    footer a:hover {
+      color: #000;
+    }
+  </style>
 </head>
 <body>
-  <h1>SAD</h1>
-  <h2>pokus</h2>
-  <p>Saro Architecture & Design</p>
+
+  <header>
+    <h1>SAD</h1>
+    <nav>
+      <a href="#onas">O nás</a>
+      <a href="#projekty">Naše projekty</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="gallery">
+    <img src="https://via.placeholder.com/400x300" alt="Ukázka 1">
+    <img src="https://via.placeholder.com/400x300" alt="Ukázka 2">
+    <img src="https://via.placeholder.com/400x300" alt="Ukázka 3">
+    <img src="https://via.placeholder.com/400x300" alt="Ukázka 4">
+  </section>
+
+  <footer>
+    <a href="#onas">O nás</a>
+    <a href="#projekty">Naše projekty</a>
+    <a href="#kontakt">Kontakt</a>
+    <p>&copy; 2025 SAD. Všechna práva vyhrazena.</p>
+  </footer>
+
 </body>
 </html>
